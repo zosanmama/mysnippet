@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>マイスニペット</title>
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+
+ 
+  
+</head>
+<body>
+  <header>
+    My snippet
+  </header>
+  <main>
+    <section>
+        <h2 class="section-title">グリッドスタイル</h2>
+        <p>たくさんのタイルを並べたように見える。ホバリング時に大きくなる。選択クリックで、画面遷移する。</p>
+        <div class="content">
+          <div class="preview">
+            <div class="grid-container">
+                <a class="usecase-card-link" href="#">
+                    <div class="card">
+                        <div class="card-title">タイトル</div>
+                        <div class="card-details">
+                            <p class="article-text-title">
+                                キャッチ
+                            </p>
+                            <ul class="usecase-list">
+                                <li>詳細1</li>
+                                <li>詳細2</li>
+                                <li>詳細3</li>
+                                <li>詳細4</li>
+                            </ul>
+                        </div>
+                    </div>
+                </a>
+                <a class="usecase-card-link" href="#">
+                    <div class="card">
+                        <div class="card-title">タイトル</div>
+                        <div class="card-details">
+                            <p class="article-text-title">
+                                キャッチ
+                            </p>
+                            <ul class="usecase-list">
+                                <li>詳細1</li>
+                                <li>詳細2</li>
+                                <li>詳細3</li>
+                                <li>詳細4</li>
+                            </ul>
+                        </div>
+                    </div>
+                </a>
+                <a class="usecase-card-link" href="/usecase-recruit.html">
+                    <div class="card">
+                        <div class="card-title">タイトル</div>
+                        <div class="card-details">
+                            <p class="article-text-title">
+                                キャッチ
+                            </p>
+                            <ul class="usecase-list">
+                                <li>詳細1</li>
+                                <li>詳細2</li>
+                                <li>詳細3</li>
+                                <li>詳細4</li>
+                            </ul>
+                        </div>
+                    </div>
+                </a>
+                <a class="usecase-card-link" href="/usecase-infra.html">
+                    <div class="card">
+                        <div class="card-title">タイトル</div>
+                        <div class="card-details">
+                            <p class="article-text-title">
+                                キャッチ
+                            </p>
+                            <ul class="usecase-list">
+                                <li>詳細1</li>
+                                <li>詳細2</li>
+                                <li>詳細3</li>
+                                <li>詳細4</li>
+                            </ul>
+                        </div>
+                    </div>
+                </a>
+                <a class="usecase-card-link" href="/usecase-hairsalon.html">
+                    <div class="card">
+                        <div class="card-title">タイトル</div>
+                        <div class="card-details">
+                            <p class="article-text-title">
+                                キャッチ
+                            </p>
+                            <ul class="usecase-list">
+                                <li>詳細1</li>
+                                <li>詳細2</li>
+                                <li>詳細3</li>
+                                <li>詳細4</li>
+                            </ul>
+                        </div>
+                    </div>
+                </a>
+                <a class="usecase-card-link" href="/usecase-callcenter.html">
+                    <div class="card">
+                        <div class="card-title">タイトル</div>
+                        <div class="card-details">
+                            <p class="article-text-title">
+                                キャッチ
+                            </p>
+                            <ul class="usecase-list">
+                                <li>詳細1</li>
+                                <li>詳細2</li>
+                                <li>詳細3</li>
+                                <li>詳細4</li>
+                            </ul>
+                        </div>
+                    </div>
+                </a>
+            </div>
+          </div>
+
+          <div class="code">
+
+            <div class="tabs">
+              <div class="tab active" data-tab="fv">codes</div>
+              <div class="tab" data-tab="html">HTML</div>
+              <div class="tab" data-tab="css">CSS</div>
+              <div class="tab" data-tab="js">JavaScript</div>
+            </div>
+            <div class="code-content active" id="fv">
+                <br>上部から選択したコードをここに表示します <br> <br>    
+            </div>
+            <div class="code-content" id="html">
+                <pre>
+                    <code class="code-text">
+&lt;div class="grid-container"&gt;
+    &lt;a class="usecase-card-link" href="/usecase-realestate.html"&gt;
+    &lt;div class="card"&gt;
+        &lt;div class="card-title"&gt;タイトル&lt;/div&gt;
+        &lt;div class="card-details"&gt;
+        &lt;p class="article-text-title"&gt;キャッチ&lt;/p&gt;
+        &lt;ul class="usecase-list"&gt;
+            &lt;li&gt;詳細1&lt;/li&gt;
+            &lt;li&gt;詳細2&lt;/li&gt;
+            &lt;li&gt;詳細3&lt;/li&gt;
+            &lt;li&gt;詳細4&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/a&gt;
+    &lt;!-- 他のカードもここに含める --&gt;
+&lt;/div&gt;
+                    </code>
+                </pre>
+              </div>
+              
+            <div class="code-content" id="css">
+                <pre>
+                    <code>
+@charset "UTF-8";
+
+/*******
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+}
+*******/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;;
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* 横に2列 */
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* 横に1列 */
+    }
+}
+
+.card {
+    background: #fff;
+    border-top: #0068b6 solid 0.5px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px #0068b6;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 0; 
+}
+
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 12px #0068b6;
+    z-index: 10px;
+}
+
+.card-icon {
+    font-size: 40px;
+    color: #333;
+    margin: 20px 0;
+}
+
+.usecase-card-link {
+    text-decoration: none;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #000000;
+}
+
+#scene .title-icon {
+    height: 100px;
+}
+
+.card-details {
+    font-size: 14px;
+    color: #000000;
+    padding: 0 10px;
+    display: none;
+}
+
+.card:hover .card-details {
+    display: block;
+}
+
+.usecase-list {
+    margin-bottom: 30px;
+}
+
+                    </code>
+                </pre>
+            </div>
+            <div class="code-content" id="js">
+              JavaScriptコード例
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+    <section>
+      <h2>セクション2</h2>
+      <p>ここにセクションの説明が入ります。</p>
+      <div class="content">
+        <div class="preview">
+          <!-- ここにウェブの見た目を表示 -->
+          <br><br><br>プレビュー表示例<br><br><br>
+        </div>
+        <div class="code">
+            <div class="tabs">
+                <div class="tab active" data-tab="fv">codes</div>
+                <div class="tab" data-tab="html">HTML</div>
+                <div class="tab" data-tab="css">CSS</div>
+                <div class="tab" data-tab="js">JavaScript</div>
+              </div>
+              <div class="code-content active" id="fv">
+                  <br>上部から選択したコードをここに表示します <br> <br>    
+              </div>
+              <div class="code-content" id="html">
+              &lt;div&gt;HTMLコード例&lt;/div&gt;
+            </div>
+            <div class="code-content" id="css">
+              body {
+                background-color: #f0f0f0;
+              }
+            </div>
+            <div class="code-content" id="js">
+              console.log('JavaScriptコード例');
+            </div>
+          </div>
+      </div>
+    </section>
+    <section>
+        <h2>セクション3</h2>
+        <p>ここにセクションの説明が入ります。</p>
+        <div class="content">
+          <div class="preview">
+            <!-- ここにウェブの見た目を表示 -->
+            <br><br><br>プレビュー表示例<br><br><br>
+          </div>
+          <div class="code">
+              <div class="tabs">
+                  <div class="tab active" data-tab="fv">codes</div>
+                  <div class="tab" data-tab="html">HTML</div>
+                  <div class="tab" data-tab="css">CSS</div>
+                  <div class="tab" data-tab="js">JavaScript</div>
+                </div>
+                <div class="code-content active" id="fv">
+                    <br>上部から選択したコードをここに表示します <br> <br>    
+                </div>
+                <div class="code-content" id="html">
+                &lt;div&gt;HTMLコード例&lt;/div&gt;
+              </div>
+              <div class="code-content" id="css">
+                body {
+                  background-color: #f0f0f0;
+                }
+              </div>
+              <div class="code-content" id="js">
+                console.log('JavaScriptコード例');
+              </div>
+            </div>
+        </div>
+      </section>
+      <section>
+        <h2>セクション4</h2>
+        <p>ここにセクションの説明が入ります。</p>
+        <div class="content">
+          <div class="preview">
+            <!-- ここにウェブの見た目を表示 -->
+            <br><br><br>プレビュー表示例<br><br><br>
+          </div>
+          <div class="code">
+              <div class="tabs">
+                  <div class="tab active" data-tab="fv">codes</div>
+                  <div class="tab" data-tab="html">HTML</div>
+                  <div class="tab" data-tab="css">CSS</div>
+                  <div class="tab" data-tab="js">JavaScript</div>
+                </div>
+                <div class="code-content active" id="fv">
+                    <br>上部から選択したコードをここに表示します <br> <br>    
+                </div>
+                <div class="code-content" id="html">
+                &lt;div&gt;HTMLコード例&lt;/div&gt;
+              </div>
+              <div class="code-content" id="css">
+                body {
+                  background-color: #f0f0f0;
+                }
+              </div>
+              <div class="code-content" id="js">
+                console.log('JavaScriptコード例');
+              </div>
+            </div>
+        </div>
+      </section>
+    <!-- セクションを必要に応じて追加 -->
+  </main>
+  <footer>
+    copyright Aiko Yokoyama 2025
+  </footer>
+  <script>
+    document.querySelectorAll('.tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        const parent = tab.closest('.code');
+        const allTabs = parent.querySelectorAll('.tab');
+        const allContents = parent.querySelectorAll('.code-content');
+
+        allTabs.forEach(t => t.classList.remove('active'));
+        allContents.forEach(c => c.classList.remove('active'));
+
+        tab.classList.add('active');
+        parent.querySelector(`#${tab.dataset.tab}`).classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
