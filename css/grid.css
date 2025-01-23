@@ -35,9 +35,9 @@ body {
 
 .card {
     background: #fff;
-    border-top: #0068b6 solid 0.5px;
+    border-top: #BADE9C solid 0.5px;
     border-radius: 8px;
-    box-shadow: 0 4px 6px #0068b6;
+    box-shadow: 0 4px 6px #BADE9C;
     overflow: hidden;
     position: relative;
     text-align: center;
@@ -47,7 +47,7 @@ body {
 
 .card:hover {
     transform: scale(1.1);
-    box-shadow: 0 8px 12px #0068b6;
+    box-shadow: 0 8px 12px #BADE9C;
     z-index: 10px;
 }
 
